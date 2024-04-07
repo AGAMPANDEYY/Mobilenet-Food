@@ -33,15 +33,15 @@ import tensorflow
 import cv2
 from tensorflow.keras.preprocessing.image import img_to_array
 
-!git clone https://huggingface.co/AgamP/MobileNetV2_Food_Classif_e20
+#!git clone https://huggingface.co/AgamP/MobileNetV2_Food_Classif_e20
 
-loaded_model=tensorflow.keras.models.load_model("/kaggle/working/MobileNetV2_Food_Classif_e20/mobilenet_sft.keras")
-
-
+loaded_model=tensorflow.keras.models.load_model("mobilenet_sft.keras")
 
 
 
-image_path="/kaggle/input/gajar-ka-halwa/images.jpeg"
+
+
+#image_path="/kaggle/input/gajar-ka-halwa/images.jpeg"
 
 
 def main():
