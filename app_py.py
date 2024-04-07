@@ -46,15 +46,15 @@ loaded_model=tensorflow.keras.models.load_model("mobilenet_sft.keras")
 def main():
     st.title("Indian Food Classification")
     st.write("Hello! upload an image to know the food name")
-
+    st.sidebar.image("happystocks_technologies_logo.jpeg")
     st.sidebar.title("About")
     st.sidebar.write("This app uses a pre-trained MobileNetV2 model to classify food images into one of 80 categories.")
     st.sidebar.write("To use the app, simply upload an image and the app will display the predicted class label.")
-    st.sidebar.image("happystocks_technologies_logo.jpeg")
+    
 
     uploaded_file=st.file_uploader("Choose image file ", type=['jpg','png'])
     if uploaded_file is not None:
-        image_path= uploladed_file.name
+        image_path= uploaded_file.name
         with open(image_path, "wb") as f:
             f.write(uploaded_file.getbuffer())
 
