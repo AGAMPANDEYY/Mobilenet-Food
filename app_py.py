@@ -28,7 +28,6 @@ for dirname, _, filenames in os.walk('/kaggle/input'):
 import streamlit as st
 import cv2
 import transformers
-from transformers import TFPreTrainedModel
 import tensorflow
 import cv2
 from tensorflow.keras.preprocessing.image import img_to_array
