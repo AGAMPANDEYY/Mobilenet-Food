@@ -91,7 +91,7 @@ def main():
               decoded_prediction=decode_prediction(prediction)
               return decoded_prediction
 
-         def decode_prediction(pred):
+        def decode_prediction(pred):
               predicted_label_index=np.argmax(pred)
               predicted_class=class_labels[predicted_label_index]
               return predicted_class
@@ -100,7 +100,7 @@ def main():
 
         st.image(image_path, caption=f"Predicted Food: {predicted_class}", use_column_width=True)
 
-         st.download_button(
+        st.download_button(
             label=f"Download image ({predicted_class})",
             data=open(image_path, "rb").read(),
             file_name=f"{predicted_class}.jpg",
