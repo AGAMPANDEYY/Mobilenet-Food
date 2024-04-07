@@ -51,7 +51,7 @@ def main():
     st.sidebar.title("About")
     st.sidebar.write("This app uses a pre-trained MobileNetV2 model to classify food images into one of 80 categories.")
     st.sidebar.write("To use the app, simply upload an image and the app will display the predicted class label.")
-    st.sidebar.image("")
+    st.sidebar.image("happystocks_technologies_logo.jpeg")
 
     uploaded_file=st.file_uploader("Choose image file ", type=['jpg','png'])
     if uploaded_file is not None:
